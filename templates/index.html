@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Search albums{% endblock %}
+
+{% block content %}
+  <div id="description">
+    <p>Who is your favorite music artist or band?<br>
+        Do you want to see all of his albums?<br>
+      For your artist's discography- from the newest to the oldest,<br>
+      you just need to write his name. </p>
+  </div>
+
+  <div id="search">
+    <form method="GET" action="/albums" class="row index">
+      <label for="input-artist" class="visually-hidden">Search artist >>> </label>
+      <div class="col-auto">
+        <input class="form-control" id="input-artist" name="artist" type="text" placeholder="Search artist">
+      </div>
+      <div class="col-auto">
+        <input class="form-control" id="search-button" type="submit" value="Search">
+      </div>
+    </form>
+  </div>
+{% endblock %}
+
+

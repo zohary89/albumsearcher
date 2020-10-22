@@ -1,0 +1,136 @@
+body {
+  color: lightgoldenrodyellow;
+  font: 16px/1.5 "Comic Sans MS", cursive, sans-serif;
+  background-image: url('photos/composing-music-4.png');
+  background-color: black;
+  background-attachment: fixed; 
+  background-size: cover;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+main {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  text-shadow: -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 0 2px 0 black;
+  overflow: auto;
+  border-top:  lightgoldenrodyellow solid 3px;
+  border-bottom: lightgoldenrodyellow solid 3px;
+  background-image: url('photos/clipart-of-the-colorful-discs.jpeg');
+  background-attachment: scroll; 
+  background-size: cover;
+  padding: 1em;
+  opacity: 0.5;
+  width:100%;
+}
+
+#description {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  overflow-wrap: break-word;
+}
+
+h2 {
+  margin-top: 2.5em;
+  margin-bottom: 1.5em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.logo {
+  width: 400px
+}
+
+.index {
+  display: flex;
+  justify-content: center;
+}
+
+#search-button {
+  background-color: chocolate;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+#search-button:hover {
+  background-color: peru;
+}
+
+#albums {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.album {
+  width: 300px;
+  margin: 20px;
+}
+
+.album-photo {
+  width: 100%;
+}
+
+.album-details ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: lightgoldenrodyellow 1.5px solid;
+  width: 100%;
+  margin-top: 20%;
+  margin-bottom: 0;
+}
+
+.tracks_cover {
+  display: flex;
+  justify-content: left;
+}
+
+.cover-photo {
+  width: 250px;
+}
+
+#album_tracks {
+  background-color: rgba(238,111,87,0.36);
+  margin-right: 50px;
+  padding: 20px;
+}
+
+#album_description {
+  width: 80%;
+  margin-top: 2em;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+.back {
+  margin-top: 2em;
+}
+
+.btn-primary, 
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: rgba(238,111,87,0.3);
+  border-color: rgba(238,111,87,0.3);
+}
+
+.btn-primary:hover {
+  background-color: rgba(238,111,87,0.8);
+  border-color: rgba(238,111,87,0.8);
+}
