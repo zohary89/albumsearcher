@@ -20,7 +20,14 @@
         <input class="form-control" id="search-button" type="submit" value="Search">
       </div>
     </form>
+    {% if not is_valid %}
+    <div class="error">
+      <p>Artist not available</p>
+    </div>
+    {% endif %}
   </div>
+
+
 {% endblock %}
 
 

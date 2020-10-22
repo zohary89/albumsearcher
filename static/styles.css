@@ -25,7 +25,7 @@ h1 {
   background-attachment: scroll; 
   background-size: cover;
   padding: 1em;
-  opacity: 0.5;
+  opacity: 0.7;
   width:100%;
 }
 
@@ -37,20 +37,28 @@ h1 {
 }
 
 h2 {
-  margin-top: 2.5em;
-  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
   font-size: 3em;
   text-align: center;
   text-decoration: underline;
 }
 
 .logo {
-  width: 400px
+  max-width: 90%
+}
+
+.info {
+  font-size: 0.8em;
 }
 
 .index {
   display: flex;
   justify-content: center;
+}
+
+.error {
+  text-align: center;
 }
 
 #search-button {
@@ -113,6 +121,7 @@ footer {
 #album_description {
   width: 80%;
   margin-top: 2em;
+  margin-bottom: 4em;
 }
 
 h3 {
@@ -133,4 +142,24 @@ h3 {
 .btn-primary:hover {
   background-color: rgba(238,111,87,0.8);
   border-color: rgba(238,111,87,0.8);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .tracks_cover {
+    display: block;
+  }
+
+  #album_tracks {
+    padding: 0;
+    width: max-content;
+  }
+
+  .cover-photo {
+    width: 100%;
+  }
+
+  #album_description {
+    width: 100%;
+  }
 }

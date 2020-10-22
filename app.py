@@ -3,9 +3,10 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods =['GET'])
 def index():
-     return render_template('index.html')
+    is_valid = request.args.get('valid', default='true') == 'true'
+    return render_template('index.html', is_valid=is_valid)
 
 
 @app.route('/albums', methods =['GET'])
@@ -16,7 +17,7 @@ def albums():
     artist_resp = requests.get(f'http://theaudiodb.com/api/v1/json/1/search.php?s={artist_name}')
     artist_resp_json = artist_resp.json()
     if albums_resp_json['album'] is None:
-      return redirect(url_for('index'))
+      return redirect(url_for('index', valid='false'))
     albums = albums_resp_json['album']
     artist = artist_resp_json['artists']
     sorted_albums = sorted(albums, key=lambda k: k["intYearReleased"], reverse=True) 
