@@ -18,6 +18,8 @@ footer {
   display: flex;
   justify-content: space-between;
   border-top: lightgoldenrodyellow 1.5px solid;
+  position: relative;
+  clear: both;
   margin-top: 20%;
   margin-bottom: 0;
 }
