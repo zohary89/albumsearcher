@@ -5,8 +5,6 @@ body {
   background-color: black;
   background-attachment: fixed; 
   background-size: cover;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 main {
@@ -14,26 +12,37 @@ main {
   margin-right: 30px;
 }
 
+footer {
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  border-top: lightgoldenrodyellow 1.5px solid;
+  margin-top: 20%;
+  margin-bottom: 0;
+}
+
+footer a, a:hover {
+  color: rgb(238,111,87);
+}
+
 h1 {
   font-size: 2.5em;
+  color: lightgoldenrodyellow;
   text-align: center;
-  text-shadow: -3px 0 0 black, 0 3px 0 black, 0 -3px 0 black, 0 2px 0 black;
+  text-shadow: -3px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
   overflow: auto;
   border-top:  lightgoldenrodyellow solid 3px;
   border-bottom: lightgoldenrodyellow solid 3px;
   background-image: url('photos/clipart-of-the-colorful-discs.jpeg');
   background-attachment: scroll; 
   background-size: cover;
-  padding: 1em;
+  padding: 0.9em;
   opacity: 0.7;
   width:100%;
 }
 
-#description {
-  text-align: center;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  overflow-wrap: break-word;
+.home-link {
+text-decoration: none;
 }
 
 h2 {
@@ -44,12 +53,19 @@ h2 {
   text-decoration: underline;
 }
 
-.logo {
-  max-width: 90%
+#description {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  overflow-wrap: break-word;
 }
 
-.info {
-  font-size: 0.8em;
+.error {
+  text-align: center;
+}
+
+.logo {
+  max-width: 90%
 }
 
 .index {
@@ -57,18 +73,18 @@ h2 {
   justify-content: center;
 }
 
-.error {
-  text-align: center;
-}
-
 #search-button {
-  background-color: chocolate;
+  background-color: rgb(184, 65, 42);
   color: aliceblue;
   border-radius: 5px;
 }
 
 #search-button:hover {
-  background-color: peru;
+  background-color: rgb(240, 110, 84);
+}
+
+.info {
+  font-size: 0.8em;
 }
 
 #albums {
@@ -94,15 +110,6 @@ h2 {
   text-align: center;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  border-top: lightgoldenrodyellow 1.5px solid;
-  width: 100%;
-  margin-top: 20%;
-  margin-bottom: 0;
-}
-
 .tracks_cover {
   display: flex;
   justify-content: left;
@@ -110,12 +117,14 @@ footer {
 
 .cover-photo {
   width: 250px;
+  border-radius: 10px;
 }
 
 #album_tracks {
   background-color: rgba(238,111,87,0.36);
   margin-right: 50px;
   padding: 20px;
+  border-radius: 10px;
 }
 
 #album_description {
@@ -126,6 +135,7 @@ footer {
 
 h3 {
   text-decoration: underline;
+  margin-bottom: revert;
 }
 
 .back {
@@ -144,7 +154,6 @@ h3 {
   border-color: rgba(238,111,87,0.8);
 }
 
-
 @media only screen and (max-width: 768px) {
   .tracks_cover {
     display: block;
@@ -152,7 +161,7 @@ h3 {
 
   #album_tracks {
     padding: 0;
-    width: max-content;
+    width: 100%;
   }
 
   .cover-photo {
