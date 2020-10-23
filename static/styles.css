@@ -5,6 +5,7 @@ body {
   background-color: black;
   background-attachment: fixed; 
   background-size: cover;
+  min-height: 100%;
 }
 
 main {
