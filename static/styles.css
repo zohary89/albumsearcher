@@ -1,7 +1,7 @@
 body {
   color: lightgoldenrodyellow;
   font: 16px/1.5 "Comic Sans MS", cursive, sans-serif;
-  background-image: url('photos/composing-music-4.png');
+  background-image: url('images/composing-music-4.png');
   background-color: black;
   background-attachment: fixed; 
   background-size: cover;
@@ -34,7 +34,7 @@ h1 {
   overflow: auto;
   border-top:  lightgoldenrodyellow solid 3px;
   border-bottom: lightgoldenrodyellow solid 3px;
-  background-image: url('photos/clipart-of-the-colorful-discs.jpeg');
+  background-image: url('images/clipart-of-the-colorful-discs.jpeg');
   background-attachment: scroll; 
   background-size: cover;
   padding: 0.9em;
@@ -52,6 +52,7 @@ h2 {
   font-size: 3em;
   text-align: center;
   text-decoration: underline;
+  overflow-wrap: break-word;
 }
 
 #description {

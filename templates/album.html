@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<h2>{{ album_info.strAlbum }}/{{ album_info.strArtist }}</h2>
+<h2>{{ album_info.strAlbum }}/ {{ album_info.strArtist }}</h2>
 
 <div class=tracks_cover>
   <div id="album_tracks">
@@ -18,7 +18,7 @@
 
   <div>
     {% if album_info.strAlbumThumb is none or album_info.strAlbumThumb  == ""  %}
-      <img class="cover-photo" src="static/photos/no-image-icon-23500.jpg" alt="No image available">
+      <img class="cover-photo" src="static/images/no-image-icon-23500.jpg" alt="No image available">
     {% else %}
       <img class="cover-photo" src="{{ album_info.strAlbumThumb }}" alt="album cover">
     {% endif %}
