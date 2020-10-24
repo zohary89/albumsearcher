@@ -5,7 +5,9 @@ body {
   background-color: black;
   background-attachment: fixed; 
   background-size: cover;
-  min-height: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 main {
@@ -18,10 +20,8 @@ footer {
   display: flex;
   justify-content: space-between;
   border-top: lightgoldenrodyellow 1.5px solid;
-  position: relative;
-  clear: both;
-  margin-top: 20%;
-  margin-bottom: 0;
+  margin-top: 100px;
+  min-height:40px; 
 }
 
 footer a, a:hover {
@@ -164,8 +164,9 @@ h3 {
   }
 
   #album_tracks {
-    padding: 0;
     width: 100%;
+    padding: 10px;
+    margin-bottom: 2em;
   }
 
   .cover-photo {
