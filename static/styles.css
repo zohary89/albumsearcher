@@ -5,10 +5,10 @@ body {
   background-color: black;
   background-attachment: fixed; 
   background-size: cover;
-  min-height: 100vh;
-  max-width: 100vw;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display:flex; 
+  flex-direction:column; 
+  justify-content: space-between;
+  height: 100vh;
 }
 
 main {
@@ -21,8 +21,9 @@ footer {
   display: flex;
   justify-content: space-between;
   border-top: lightgoldenrodyellow 1.5px solid;
-  margin-top: 100px;
-  min-height:40px; 
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 0;
 }
 
 footer a, a:hover {
