@@ -21,12 +21,17 @@ footer {
   display: flex;
   justify-content: space-between;
   border-top: lightgoldenrodyellow 1.5px solid;
-  position: relative;
-  margin-top: 10%;
+  margin-top: 20%;
   margin-bottom: 0;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
-footer a, a:hover {
+footer a {
+  color:  lightgoldenrodyellow;
+}
+
+footer a:hover {
   color: rgb(238,111,87);
 }
 
@@ -98,12 +103,11 @@ h2 {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 30px;
 }
 
 .album {
   width: 300px;
-  margin: 20px;
+  margin: 1em;
 }
 
 .album-photo {
@@ -128,8 +132,8 @@ h2 {
 
 #album_tracks {
   background-color: rgba(238,111,87,0.36);
-  margin-right: 50px;
-  padding: 20px;
+  margin-right: 3em;
+  padding: 2em;
   border-radius: 10px;
 }
 
