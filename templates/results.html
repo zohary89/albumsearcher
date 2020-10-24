@@ -7,10 +7,10 @@
     <form method="GET" action="/albums" class="row results">
       <label for="input-artist" class="visually-hidden">Search artist >>> </label>
       <div class="col-auto">
-        <input class="form-control" id="input-artist" name="artist" type="text" placeholder="Search artist">
+        <input class="form-control" id="input-artist" name="artist" type="text" placeholder="Search artist" tabindex="1" required>
       </div>
       <div class="col-auto">
-        <input class="form-control" id="search-button" type="submit" value="Search">
+        <button class="form-control" id="search-button" type="submit" tabindex="2">Search</button> 
       </div>
     </form>
   </div>
